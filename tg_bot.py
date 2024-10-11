@@ -48,7 +48,7 @@ async def new(message: types.Message):
         "shortSell": 0,
         "longBuy": 0,
         "longSell": 0,
-        "qty": "0",
+        "qty": "0"
     }
     data = get_trades()
     data["Trades"] += [new_data]
@@ -89,7 +89,7 @@ async def delete(message: types.Message):
     await message.answer("Done")
 
 
-@dp.message(Command(commands=["stop"]))
+@dp.message(Command(commands=["restart"]))
 async def stop_tradeing(message: types.Message):
     stop_bot()
     await message.answer("Done")
