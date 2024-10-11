@@ -67,7 +67,7 @@ async def change(message: types.Message):
         if v["coin"] == args["coin"]:
             index = i
             break
-    data["Trades"][index][args["value_to_change"]] = args["value"]
+    data["Trades"][index][args["value_to_change"]] = float(args["value"]) if args["value_to_change"] != "qty" else args["value"]
     save_trades(data)
     stop_bot()
     await message.answer("Done")
