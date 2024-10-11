@@ -24,12 +24,12 @@ def message_reader(message: str) -> list:
 
 
 def get_trades():
-    with open("Trades.txt", "r") as file:
+    with open("TradesConfiguration.txt", "r") as file:
         return json.load(file)
 
 
 def save_trades(data):
-    with open("Trades.txt", "w") as file:
+    with open("TradesConfiguration.txt", "w") as file:
         json.dump(data, file)
 
 
