@@ -6,7 +6,7 @@ CryptoTrader is an automated trading bot that allows you to trade cryptocurrenci
 ## Installation
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:Gor903/TraderService.git
+   git clone https://github.com/Gor903/TraderService.git
    cd TraderService
 
 ## Usage
